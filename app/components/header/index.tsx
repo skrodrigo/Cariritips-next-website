@@ -32,7 +32,9 @@ export default function Navegacao() {
             </div>
           </div>
           <div className="md:flex hidden">
+          <Link href='https://wa.me/5588992564950'>
             <Button className="bg-green text-white">Contate-nos</Button>
+          </Link >
           </div>
           <div className="md:hidden">
             <Sheet>
@@ -55,8 +57,9 @@ export default function Navegacao() {
                   >
                     Sobre
                   </Link>
-
-                  <Button className="bg-green text-white">Contate-nos</Button>
+                  <Link href='https://wa.me/5588992564950' >
+                    <Button className="bg-green text-white w-full">Contate-nos</Button>
+                  </Link>
                 </nav>
               </SheetContent>
             </Sheet>
