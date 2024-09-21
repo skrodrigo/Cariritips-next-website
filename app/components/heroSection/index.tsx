@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <div className="bg-black flex-col-reverse text-white flex container mx-auto gap-8 md:flex-row justify-between items-center">
-      <div className="px-4 text-center md:text-left">
+    <div className="flex-col-reverse text-white flex container mx-auto gap-8 xl:flex-row justify-between items-center">
+      <div className="px-4 text-center xl:text-left">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 w-full md:w-[640px]">
           Te ajudamos a ser lucrativo{' '}
           <span className="text-green">no mercado esportivo!</span>
@@ -36,9 +36,6 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mx-4 md:hidden lg:flex">
-        <Image alt="Foto" src="/foto.png" width={400} height={406} />
       </div>
     </div>
   )
