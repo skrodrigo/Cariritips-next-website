@@ -1,5 +1,5 @@
 import Faq from './components/Faq'
-import FeaturesSection  from './components/featuresSection'
+import FeaturesSection from './components/featuresSection'
 import Footer from './components/Footer/Footer'
 import Form from './components/Form'
 import Header from './components/header'
@@ -12,7 +12,6 @@ export default function Home() {
       <Header />
       <AnimatedShinyTextDemo />
       <HeroSection />
-      <FeaturesSection />
       <Form />
       <Faq />
       <Footer />

@@ -1,51 +1,108 @@
+'use client'
+
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+import type * as z from 'zod'
 import { Button } from '@/components/ui/button'
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { ChevronRight } from 'lucide-react'
+import { formSchema } from '@/app/schemas/validationSchema'
 
-export default function Form() {
+function onSubmit(values: z.infer<typeof formSchema>) {
+  console.log(values)
+}
+
+export default function AccessForm() {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      whatsapp: '',
+    },
+  })
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log(values)
+  }
+
   return (
     <div className="bg-black text-white py-16">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12 mt-12">
           Preencha os campos e ganhe o Acesso!
         </h2>
-        <form className="space-y-4 mx-auto">
-          <div className="flex text-xl flex-col">
-            <label className="block text-left mb-1" htmlFor="name">
-              Seu Nome:
-            </label>
-            <Input
-              id="name"
-              placeholder="Rodrigo Carvalho"
-              className="w-full px-6 py-6"
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-4 mx-auto max-w-4xl"
+          >
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem className="flex text-xl flex-col">
+                  <FormControl>
+                    <Input
+                      placeholder="Seu Nome"
+                      className="w-full px-6 py-6"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-          </div>
-          <div className="flex text-xl flex-col">
-            <label className="block text-left mb-1" htmlFor="email">
-              Email:
-            </label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="rodrigosk@email.com"
-              className="w-full px-6 py-6"
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem className="flex text-xl flex-col">
+                  <FormControl>
+                    <Input
+                      type="email"
+                      placeholder="seuemail@provedor.com"
+                      className="w-full px-6 py-6"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-          </div>
-          <div className="flex text-xl flex-col">
-            <label className="block text-left mb-1" htmlFor="whatsapp">
-              Whatsapp:
-            </label>
-            <Input
-              id="whatsapp"
-              placeholder="88 9 9999-9999"
-              className="w-full px-6 py-6"
+            <FormField
+              control={form.control}
+              name="whatsapp"
+              render={({ field }) => (
+                <FormItem className="flex text-xl flex-col">
+                  <FormControl>
+                    <Input
+                      placeholder="99 9 9999-9999"
+                      className="w-full px-6 py-6"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-          </div>
-          <Button className="bg-green text-white w-full py-6 mt-4">
-            Clique para receber o link do grupo
-            <ChevronRight size={20} className="ml-2" />
-          </Button>
-        </form>
+            <Button
+              type="submit"
+              className="bg-green text-white w-full py-6 mt-4"
+            >
+              Clique para receber o link do grupo
+              <ChevronRight size={20} className="ml-2" />
+            </Button>
+          </form>
+        </Form>
       </div>
     </div>
   )

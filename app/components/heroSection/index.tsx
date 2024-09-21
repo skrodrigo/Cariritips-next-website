@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <div className="bg-black text-white pb-12 flex container mx-auto flex-col md:flex-row justify-between items-center">
+    <div className="bg-black flex-col-reverse text-white pb-12 flex container mx-auto gap-8 md:flex-row justify-between items-center">
       <div className="px-4 text-center md:text-left">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 w-full md:w-[640px]">
           Te ajudamos a ser lucrativo{' '}
@@ -33,7 +33,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block">
+      <div className="block">
         <Image alt="Foto" src="/foto.png" width={400} height={406} />
       </div>
     </div>

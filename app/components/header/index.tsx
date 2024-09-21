@@ -15,6 +15,7 @@ export default function Navegacao() {
             <Link href="/" className="text-2xl font-bold">
               <Image
                 src="/logo.svg"
+                priority
                 width={40}
                 height={45}
                 alt="Logo da Marca CaririTips"
@@ -38,9 +39,8 @@ export default function Navegacao() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">Abrir menu</span>
+                <Button className="bg-transparent" size="icon">
+                  <Menu className="h-7 w-7 text-white" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="top">
