@@ -17,7 +17,7 @@ export default function HeroSection() {
           <span className="font-bold">grupo grátis!</span>
         </p>
         <div className="flex flex-col md:flex-row justify-center md:justify-left items-center gap-5">
-          <Link href="/">
+          <Link href="https://chat.whatsapp.com/KfzCb422E3NHHqH9Lo3c8h">
             <AnimatedSubscribeButtonDemo />
           </Link>
           <div className="md:text-sm md:flex-row flex-col gap-2 flex text-gray50  justify-center items-center">
