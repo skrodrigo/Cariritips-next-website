@@ -37,7 +37,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="block">
+      <div className="mx-4 md:hidden lg:flex">
         <Image alt="Foto" src="/foto.png" width={400} height={406} />
       </div>
     </div>

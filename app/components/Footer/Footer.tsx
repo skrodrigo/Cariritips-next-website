@@ -1,4 +1,4 @@
-import { AiFillTikTok, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillTikTok, AiFillInstagram, AiFillYoutube } from 'react-icons/ai'
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
         </p>
         <div className="flex flex-wrap justify-center md:justify-end space-x-4 mt-4 md:mt-0">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/cariritips/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-500 hover:text-green-600"
@@ -17,15 +17,15 @@ export default function Footer() {
             <AiFillInstagram color="#17B121" size={24} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.youtube.com/@CaririTips "
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-500 hover:text-green-600"
           >
-            <AiFillLinkedin color="#17B121" size={24} />
+            <AiFillYoutube color="#17B121" size={24} />
           </a>
           <a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@cariritips"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-500 hover:text-green-600"
