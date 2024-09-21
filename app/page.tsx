@@ -32,7 +32,7 @@ export default function Home() {
         <hr className="w-full h-full absolute bottom-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
       </div>
       <AnimatedShinyTextDemo />
-      <hr className="mb-[500px] md:mb-[700px]  lg:mb-20 xl:mb-0 w-0" />
+      <hr className="mb-[200px] sm:mb-[400px] md:mb-[700px]  lg:mb-20 xl:mb-0 w-0" />
       <HeroSection />
       {/* <Form /> */}
       <Faq />
