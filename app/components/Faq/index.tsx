@@ -8,37 +8,39 @@ import {
 const faqs = [
   {
     value: 'item-1',
-    question: 'O que é Cariri Tips?',
+    question: 'O que é o Cariri Tips?',
     answer:
-      'Cariri Tips é uma plataforma que te ajuda a ser lucrativo com futebol e outros esportes! Somos especialistas em operações no Mercado Esportivo, oferecendo análises precisas e estratégias vencedoras.',
+      'O Cariri Tips é uma plataforma inovadora que ajuda você a maximizar seus lucros com apostas em futebol e outros esportes. Somos especialistas no Mercado Esportivo, oferecendo análises detalhadas e estratégias vencedoras para orientar suas decisões.',
   },
   {
     value: 'item-2',
-    question: 'Como posso participar do grupo no WhatsApp?',
+    question: 'Como posso me juntar ao grupo?',
     answer:
-      'Você pode participar do nosso grupo no WhatsApp clicando no botão "Grupo do WhatsApp" na página inicial.',
+      'Para se juntar ao nosso grupo , basta clicar no botão "Quero o Grupo" disponível na página inicial do nosso site.',
   },
   {
     value: 'item-3',
     question: 'O acesso ao grupo é gratuito?',
-    answer: 'Sim, o acesso ao nosso grupo no WhatsApp é totalmente gratuito.',
+    answer:
+      'Sim, a participação no nosso grupo é totalmente gratuita. Todos são bem-vindos!',
   },
   {
     value: 'item-4',
     question: 'Como posso obter mais informações?',
     answer:
-      'Para mais informações, você pode nos contatar através do nosso site ou participar do nosso grupo no WhatsApp.',
+      'Para mais informações, você pode entrar em contato conosco através do nosso site ou participar do nosso grupo gratuito, onde teremos o prazer de responder suas dúvidas.',
   },
   {
     value: 'item-5',
     question: 'Quais esportes são cobertos pelo Cariri Tips?',
-    answer: 'O Cariri Tips cobre apenas o esporte futebol.',
+    answer:
+      'Atualmente, o Cariri Tips foca exclusivamente no futebol, proporcionando análises e estratégias especializadas nesse esporte.',
   },
   {
     value: 'item-6',
     question: 'Como posso confiar nas análises do Cariri Tips?',
     answer:
-      'Nossas análises são feitas por especialistas com anos de experiência no mercado esportivo, garantindo informações precisas e confiáveis.',
+      'Nossas análises são elaboradas por especialistas com vasta experiência no mercado esportivo. Trabalhamos com informações precisas e confiáveis para garantir que você tome decisões informadas.',
   },
 ]
 

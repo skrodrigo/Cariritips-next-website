@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <AnimatedShinyTextDemo />
       <HeroSection />
-      <Form />
+      {/* <Form /> */}
       <Faq />
       <Footer />
     </main>

@@ -16,19 +16,17 @@ export default function Navegacao() {
               <Image
                 src="/logo.svg"
                 priority
+                quality={100}
                 width={40}
                 height={45}
                 alt="Logo da Marca CaririTips"
               />
             </Link>
             <div className="hidden md:flex items-center space-x-4">
-              <Link
-                href="/grupos"
-                className="text-sm font-medium text-gray-700"
-              >
+              <Link href="/" className="text-sm font-medium text-gray-700">
                 Grupos
               </Link>
-              <Link href="/sobre" className="text-sm font-medium text-gray-700">
+              <Link href="/" className="text-sm font-medium text-gray-700">
                 Sobre
               </Link>
             </div>

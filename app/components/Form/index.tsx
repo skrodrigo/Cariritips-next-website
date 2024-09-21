@@ -52,7 +52,7 @@ export default function AccessForm() {
                 <FormItem className="flex text-xl flex-col">
                   <FormControl>
                     <Input
-                      placeholder="Seu Nome"
+                      placeholder="Nome Completo"
                       className="w-full px-6 py-6"
                       {...field}
                     />
@@ -69,7 +69,7 @@ export default function AccessForm() {
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="seuemail@provedor.com"
+                      placeholder="E-mail"
                       className="w-full px-6 py-6"
                       {...field}
                     />
@@ -85,7 +85,7 @@ export default function AccessForm() {
                 <FormItem className="flex text-xl flex-col">
                   <FormControl>
                     <Input
-                      placeholder="99 9 9999-9999"
+                      placeholder="Whatsapp"
                       className="w-full px-6 py-6"
                       {...field}
                     />
