@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { GeistSans } from 'geist/font/sans'
 import { cn } from '@/lib/utils'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
   title: 'Cariri Tips',
@@ -19,6 +21,8 @@ export default function RootLayout({
       <body
         className={cn(GeistSans.className, 'antialiased text-white bg-black')}
       >
+        <Analytics />
+        <SpeedInsights />
         {children}
       </body>
     </html>
