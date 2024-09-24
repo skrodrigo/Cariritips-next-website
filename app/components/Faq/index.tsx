@@ -16,7 +16,7 @@ const faqs = [
     value: 'item-2',
     question: 'Como posso me juntar ao grupo?',
     answer:
-      'Para se juntar ao nosso grupo , basta clicar no botão "Quero o Grupo" disponível na página inicial do nosso site.',
+      'Para se juntar ao nosso grupo basta clicar no botão "Quero o Grupo" disponível na página inicial do nosso site.',
   },
   {
     value: 'item-3',
@@ -52,7 +52,7 @@ export default function Faq() {
           Dúvidas e Perguntas Frequentes
         </h2>
         <div className="flex flex-col ">
-          <Accordion type="multiple" className="space-y-4 ">
+          <Accordion type="multiple" className="space-y-4">
             {faqs.map(faq => (
               <AccordionItem
                 key={faq.value}
