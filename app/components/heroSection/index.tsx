@@ -7,11 +7,11 @@ export default function HeroSection() {
   return (
     <div className="flex-col-reverse text-white flex container mx-auto gap-8 lg:flex-row justify-between items-center">
       <div className="px-8 text-center lg:text-left">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 w-full md:w-[640px]">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 w-full md:w-[640px]">
           Te ajudamos a ser lucrativo{' '}
           <span className="text-green">no mercado esportivo!</span>
         </h1>
-        <p className="text-sm md:text-xl mb-8 w-full md:w-[580px]">
+        <p className="text-xs md:text-xl mb-8 w-full md:w-[580px]">
           Somos especialistas em dicas esportivas, oferecendo análises precisas
           e estratégias vencedoras no nosso{' '}
           <span className="font-bold">grupo grátis!</span>

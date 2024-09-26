@@ -35,7 +35,7 @@ export default function AccessForm() {
   }
 
   return (
-    <div className="bg-black text-white py-16">
+    <div className=" text-white mt-16">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12 mt-12">
           Preencha os campos e ganhe o Acesso!
