@@ -11,30 +11,51 @@ export default function Home() {
   return (
     <main className="flex flex-col mx-auto">
       <Header />
-      <div className="flex lg:hidden absolute w-full top-16 -z-10 scale-100">
-        <Image
-          alt="Foto"
-          src="/bannerMobile.png"
-          width={1080}
-          height={1300}
-          className="relative object-cover"
-        />
-        <hr className="w-full h-full absolute bottom-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
-      </div>
-      <div className="hidden lg:flex absolute top-16 -z-10">
+
+      {/* Banner para telas grandes */}
+      <div className="hidden 2xl:flex absolute top-16 w-full h-[500px] overflow-hidden -z-10">
         <Image
           alt="Foto"
           src="/banner.png"
-          width={2560}
-          height={700}
+          width={1920}
+          height={500}
           priority
           quality={100}
-          className="relative object-cover"
+          className="object-cover w-full h-full"
         />
         <hr className="w-full h-full absolute bottom-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
       </div>
+
+      {/* Banner para telas médias */}
+      <div className="2xl:hidden lg:flex hidden absolute top-16 w-full h-[600px] overflow-hidden -z-10">
+        <Image
+          alt="Foto"
+          src="/banner1280.png"
+          width={1535}
+          height={600}
+          priority
+          quality={100}
+          className="object-cover w-full h-full"
+        />
+        <hr className="w-full h-full absolute bottom-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
+      </div>
+
+      {/* Banner para telas menores */}
+      <div className="flex lg:hidden absolute top-16 w-full h-[600px] overflow-hidden -z-10">
+        <Image
+          alt="Foto"
+          src="/banner1024.png"
+          width={1024}
+          height={600}
+          priority
+          quality={100}
+          className="object-cover w-full h-full"
+        />
+        <hr className="w-full h-full absolute bottom-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
+      </div>
+
       <AnimatedShinyTextDemo />
-      <hr className="mb-[300px] sm:mb-[500px] md:mb-[700px] lg:mb-20 xl:mb-0 w-0" />
+      <hr className="mb-[450px] lg:mb-0 xl:mb-0 w-0" />
       <HeroSection />
       {/* <Form /> */}
       <Faq />
