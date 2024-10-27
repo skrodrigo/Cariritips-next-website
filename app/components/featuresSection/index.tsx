@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 const FeaturesSection = () => {
   return (
     <div className="container flex flex-col mx-auto justify-center items-center px-4">
-      <h1 className="text-4xl md:text-5xl font-semibold text-center mb-12 mt-12">
+      <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12 mt-12">
         Somos além da Concorrência!
       </h1>
 

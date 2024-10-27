@@ -48,7 +48,7 @@ const Faq = () => {
   return (
     <section className="lg:mt-20 text-white py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-semibold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
           Dúvidas e Perguntas Frequentes
         </h2>
         <Accordion type="multiple" className="space-y-4">

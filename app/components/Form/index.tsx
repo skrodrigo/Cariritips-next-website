@@ -9,16 +9,11 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { ChevronRight } from 'lucide-react'
 import { formSchema } from '@/app/schemas/validationSchema'
-
-function onSubmit(values: z.infer<typeof formSchema>) {
-  console.log(values)
-}
 
 export default function AccessForm() {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -30,14 +25,28 @@ export default function AccessForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      })
+      if (!response.ok) {
+        throw new Error('Erro ao enviar o formulário')
+      }
+      console.log('Formulário enviado com sucesso', values)
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
-    <div className=" text-white mt-16">
+    <div className="text-white mt-20">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12 mt-12">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 mt-12">
           Preencha os campos e ganhe o Acesso!
         </h2>
         <Form {...form}>

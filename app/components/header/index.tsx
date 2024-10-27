@@ -12,14 +12,14 @@ export default function Navegacao() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center justify-center gap-8">
-            <Link href="/" className="text-2xl font-bold">
+            <Link href="/">
               <Image
-                src="/logo.svg"
-                priority={true}
+                src="/logo.png"
+                alt="Logo"
+                width={1000}
+                height={1000}
+                className="w-10 h-10 md:w-12 md:h-12"
                 quality={100}
-                width={40}
-                height={45}
-                alt="Logo da Marca CaririTips"
               />
             </Link>
             <div className="hidden md:flex items-center space-x-4">
